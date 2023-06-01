@@ -1,0 +1,224 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+p{
+    color: #2b4b80;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    margin: 0 auto;
+    position: sticky;
+    background-color: #fff;
+}
+
+ul{
+    display: flex;
+}
+
+li{
+    padding: 10px;
+    list-style: none;
+}
+
+li a{
+    text-decoration: none;
+    font-size: 20px;
+    color: #2b4b80;
+}
+
+li a:hover{
+    color: #ff5c97;
+    transition: 500ms all ease;
+}
+
+.btn button{
+    background-color: #4043bc;
+    border: none;
+    padding:  10px 20px;
+    color: white;
+    border-radius: 5px;
+    font-size: 20px;
+}
+
+.btn button:hover{
+    transition: 500ms all ease;
+    background: #ff5c97;
+}
+
+main{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 10%;
+}
+
+.josh h1{
+    font-size: 50px;
+    color: #2b4b80;
+    padding-bottom: 2rem;
+}
+
+.josh p{
+    color: #2b4b80;
+    padding: 0  155px 2rem 0;
+}
+
+.josh button{
+    border: none;
+    background: #ff5c97;
+    color: white;
+    padding:1.5rem 3.5rem;
+    border-radius: 5px;
+    font-size: 20px;
+}
+
+.josh button:hover{
+    background: #c84676;
+    transition: 500ms all ease;
+}
+
+section h2{
+    text-align: center;
+    width: 45%;
+    margin: 6rem auto;
+    font-size: 3rem;
+    color: #2b4b80;
+}
+
+.card-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 80%;
+    margin: 0 auto;
+    gap: 2rem;
+}
+
+.fixed{
+    padding: 2rem;
+    text-align: center;
+    box-shadow: rgb(220, 214, 214) 2px 2px 2px 2px;
+}
+
+.fixed .fa-arrow-right {
+    background: #7b40c0;
+    font-size: larger;
+    color: white;
+    padding: 5px;
+    border-radius: 50%;
+    margin-right: 5px;
+}
+
+.fixed a {
+    text-decoration: none;
+    color:  #7b40c0;
+}
+
+
+.emma{
+    font-size: 1.7rem;
+    color: #2b4b80;
+    font-weight: 600;
+}
+
+.card{
+    padding: 2rem;
+    text-align: center;
+}
+
+
+.card:hover{
+    box-shadow: rgb(220, 214, 214) 2px 2px 2px 2px;
+    transition: 500ms all ease;
+
+}
+
+.fa-square-check{
+    font-size: 4rem;
+    color: #ff5c97;
+}
+
+.card .fa-arrow-right{
+    background: #c5ccd8;
+    font-size: larger;
+    color: white;
+    padding: 5px;
+    border-radius: 50%;
+    margin-right: 5px;
+}
+
+.card .fa-arrow-right:hover{
+    background: #7b40c0;
+}
+
+.card a {
+    text-decoration: none;
+    color:  #c5ccd8;
+}
+
+.card a:hover{
+   color: #7b40c0;
+}
+
+@media (max-width: 1024px) {
+    main{
+        display: block;;
+    }
+
+    main img{
+       display: none;
+    }
+}
+.op{
+   padding: 240px 0px 190px;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 10%;
+text-align: left;
+}
+.tt{
+    text-align: left;
+    padding: 2.3rem;
+    justify-content: space-between;
+}
+.tt h3{ font-size: 50px;
+    color: #2b4b80;
+    margin-bottom: auto;
+}
+.tt p{
+    padding: 1rem ;
+    margin-bottom: 2rem;
+}
+
+.jos{
+    font-size: 1.3rem;
+    background-color: #ff5c97;
+    color: #fff;
+    padding: 1.3rem 3.5rem;
+    border: none;
+    font-family: 'Poppins', sans-serif;
+    border-radius: 5px;
+}
+.jos:hover{
+    background: #ae436b;
+    transition: 500ms all ease;
+}
+h4{
+    text-align: center;
+    width: 45%;
+    margin: 6rem auto;
+    font-size: 3.5rem;
+    color: #2b4b80; 
+    position: relative;
+}
+.rr{   display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 80%;
+    margin: 0 auto;
+    gap: 2rem;
+}
