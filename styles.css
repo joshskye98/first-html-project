@@ -165,7 +165,9 @@ section h2{
    color: #7b40c0;
 }
 
-@media (max-width: 1024px) {
+@media screen and (max-width: 1024px) {
+  
+    
     main{
         display: block;;
     }
@@ -173,27 +175,30 @@ section h2{
     main img{
        display: none;
     }
+    
 }
+
+
 .op{
-   padding: 240px 0px 190px;
-    display: flex;
-    justify-content: space-between;
-    margin-left: 10%;
-text-align: left;
+    width: 90%;
+    margin: 5rem auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    place-items: center;
 }
-.tt{
-    text-align: left;
-    padding: 2.3rem;
-    justify-content: space-between;
+
+.mm {
+    width: 90%;
 }
-.tt h3{ font-size: 50px;
-    color: #2b4b80;
-    margin-bottom: auto;
+
+.mm img{
+    width: 100%;
 }
-.tt p{
-    padding: 1rem ;
-    margin-bottom: 2rem;
-}
+
+ .tt h1{
+    color: #2b4b80; 
+    font-size: 2.5rem;
+ }
 
 .jos{
     font-size: 1.3rem;
