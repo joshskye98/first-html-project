@@ -1,0 +1,90 @@
+header{
+    background-image: url('goodle.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    font-family: 'Poppins', sans-serif;
+
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    color:#ffd700;
+    width: 85%;
+    margin: auto;
+    padding-top: 1rem;
+}
+.moo a{
+    font-size: 30px;
+    text-decoration: none;
+    color:#ffd700;
+    font-weight: 600;
+}
+ul{
+    display: flex;
+    list-style: none;
+    padding-right: 5rem;
+    
+}
+li a{
+    list-style: none;
+    padding: 28px 25px;
+    text-decoration: none;
+    color:#ffd700;
+    font-weight: 582;
+    font-size: 15px;
+}
+.btn button{
+    border: none;
+    color: #fff;
+    padding: 1.25rem 1.5rem;
+    border-radius: 5px;  
+    background-color: #27CB8B; 
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+.red button{
+    border: none;
+    color: #fff;
+    padding: 1.2rem 2.2rem;
+    border-radius: 5px;
+    font-weight: 700;
+    background-color: #000DFF;
+    font-size: 15px;
+}
+.red button:hover{
+  transition:600ms all ease;
+  background-color: #27CB8B; 
+  color: #fff;  
+}
+main{
+    background-image: url('WhatsApp Image 2023-06-12 at 5.12.57 AM (3).jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+}
+main img{
+    width: 90%;
+    margin-top: 8rem;
+}
+main h1{
+    font-size: 3rem;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    color:#dac936b1;
+    margin-top: 3rem;
+
+}
+/* main p{ */
+  text-align: justify;
+  width: 60%;
+  line-height: 2rem;
+  font-size: 2rem;
+  margin-top: 6rem;
+  width: 80%;
+  color:#ffd700;
+
+}
+
+

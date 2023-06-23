@@ -1,0 +1,198 @@
+body{
+    font-family: 'Manrope', sans-serif;
+    background-color:  hsl(240, 6%, 93%);
+    
+
+}
+
+.jungle{
+    font-family: 'Manrope', sans-serif;
+    
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin: auto;
+    position: sticky;
+    font-family: 'Manrope', sans-serif;
+
+}
+.js{
+    font-size: 25px;
+    /* padding: 5px 0px; */
+    /* margin: 0 16px 0 0; */
+    text-decoration: none; 
+    color:  hsl(269, 43%, 29%);
+    /* padding: 10px; */
+    border-radius: 1.25rem;
+    padding: 10px 0px;
+
+}
+.js a{
+    
+    color: hsl(271, 34%, 36%);
+    text-decoration: none;
+    /* padding: 10px;  */
+    font-weight: 800;
+    /* padding: 10px 30px; */
+    border-radius: 1.25rem;
+    
+}
+.js a:hover{
+    background: #6927ff;
+    transition: 700ms all ease;
+    padding: 1.25rem 3.125rem;
+    border-radius: 1.875rem;
+    color: white;
+    font-size: 1.875rem;
+
+
+}
+.ee a{
+    color: #6927ff;
+}
+ul{
+    display: flex;
+}
+li{
+    padding: 1.875rem;
+    list-style:none;
+}
+li a{
+    text-decoration: none;
+    color: rgb(44, 19, 101);
+    padding: 5px ;
+    font-family: 'Manrope', sans-serif;
+    font-weight: 700;
+    
+}
+li a:hover{
+    color: #6927ff;
+    transition: 500ms all ease;
+}
+.ss{
+    background-color: #6927ff;
+    border: none;
+    color: #fff;
+    padding: 3px 1.25rem;
+    margin: 15px 0 20px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.ss:hover{
+    background-color: brown;
+    transition: 600ms all ease
+    ;
+}
+.doo{
+    background-size: cover;
+    min-height: 60vh;
+    position: relative;
+    
+}
+.ease img{
+    position: absolute;
+    height: 37.5rem;
+}
+.ease .reaction{
+    width: 5rem;
+    height: 5rem;
+    top: 100px;
+    right: 3.125rem;
+}
+.ease .reaction2{
+    width: 5rem;
+    height: 5rem;
+    bottom: 25px;
+    left: 500px;
+
+}
+.ease .reaction3{
+    width: 5rem;
+    height: 5rem;
+    top: 100px;
+    left: 3.125rem;
+}
+.ease .visual{
+    width: 5rem;
+    height: 5rem;
+    top: 100px;
+    right: 39.125rem;
+}
+.ease .visual2{
+    width: 5rem;
+    height: 5rem;
+    top: 450px;
+    right: 27.125rem;
+}
+.ease .visual3{
+    width: 5rem;
+    height: 5rem;
+    bottom: 90px;
+    left: 3.125rem;
+}
+.ease .verbal{
+    width: 5rem;
+    height: 5rem;
+    top: 300px;
+    right: 30.125rem;
+}
+.ease .verbal2{
+    width: 5rem;
+    height: 5rem;
+    top: 500px;
+    right: 1.125rem;
+}
+.ease .verbal3{
+    width: 5rem;
+    height: 5rem;
+    top: 270px;
+    right: 50.125rem;
+}
+
+main{
+    display: flex;
+    justify-content: space-between;
+    /* margin-left: 10%; */
+    z-index: -1;
+}
+.luv img{
+    width: 25rem;
+    height: 25rem;
+    top: 3.75rem;
+    left: 3.125rem;
+    /* padding-top: -10; */
+}
+.up img{
+    width: 25rem;
+    height: 25rem;
+    top: 1.25rem;
+    right: 6.25rem;
+}
+
+.alone button{
+    /* padding-top:460px; */
+    /* text-align: left; */
+    margin:0 10%;
+    border:none;
+    background-color: #5711f9;
+    z-index: 1;
+    position: absolute;
+    top: 34.375rem;
+     right: 00px;
+    font-size: 1.875rem;
+    padding:5px 2.1875rem;
+    border-radius: 1.25rem;
+    color:  hsl(240, 6%, 93%);
+}
+section .work{
+    padding-top: 550px;
+    font-size: 30px;
+    text-align: center;
+    font-weight: 1000;
+    color: #5711f9;
+
+
+}

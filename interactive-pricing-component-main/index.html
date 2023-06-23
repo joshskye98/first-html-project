@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="STYLES.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Poppins:wght@100;200;300;400;500;600;700&family=Sofia+Sans+Condensed:ital,wght@0,500;0,600;0,800;0,900;1,400;1,500;1,700;1,800&display=swap" rel="stylesheet">
+  
+  <title>O2</title>
+ <style>
+  * {
+    margin: 0;
+    /* padding: 0%; */
+    box-sizing: border-box;
+  }
+  img {
+    max-width: 100%;
+  }
+  ul {
+    list-style-type: none;
+    text-align: center;
+  }
+  body{
+    text-align: center;
+    font-family: 'Manrope', sans-serif;
+    font-size: 15px;
+    min-width: 375px;
+    margin: auto;
+    color: hsl(225, 20%, 60%);
+    background-color:  hsl(230, 100%, 99%);
+
+  }
+  .btn {
+    background-color:  hsl(227, 35%, 25%);
+    border-radius: 20px;
+    color:  hsl(226, 100%, 87%);
+    padding: 12px 50px;
+    border: none;
+    font-family:  'Manrope', sans-serif;
+    cursor: pointer;
+    font-weight: 800;
+    font-size: 12px;
+  }
+  .btn:hover {
+    background:  hsl(174, 86%, 45%);
+    transition: 500ms all ease;
+  }
+  .xtra {
+    position: absolute;
+    z-index: -1;
+    background-size: cover;
+
+  }
+  .xtra img{
+    height: 400px;
+  }
+  .cool {
+    position: relative;
+    padding: 82px 20px;
+  }
+  .cool h1 {
+    font-size: 20px;
+    font-weight: 1000;
+    padding-bottom: 10px;
+    color:  hsl(227, 35%, 25%);
+
+  }
+  .cool p {
+    line-height: 25px;
+    color: hsl(225, 20%, 60%);
+    font-size: 13px;
+    font-weight: 600;
+  }
+  .cool .pattern-circles {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: -1;
+    top: 22%;
+  }
+  .card-container {
+    background-color: #fff;
+    padding: 25px 2px;
+    margin: 0 20px 50px;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px hsla(0, 0%, 0%, 0.1);
+  }
+  .card-container .last h4{
+    color: hsl(225, 20%, 60%);
+    font-size: 18px;
+    font-weight: 700;
+  }
+  .card-container input{
+    padding:17px 30px;
+  }
+  .soso{
+    display: grid;
+    align-items: center;
+  }
+  .soso p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color:  hsl(227, 35%, 25%);
+   font-weight: 1000;
+    font-size: 30px;
+    gap: 8px;
+  }
+.soso .like{
+  color: hsl(225, 20%, 60%);
+  font-size: 13px;
+}
+  ul{
+    line-height: 28px;
+    color: hsl(225, 20%, 60%);
+    font-size: 13px;
+    font-weight: 600;
+    margin-right: 40px;
+    padding-bottom: 30px;
+  } 
+  ul img {
+    margin-right: 10px;
+  }
+  .toggle .name{
+    font-size: 13px;
+    font-weight: 700;
+  }
+ 
+  .toggle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 30px 0 40px;
+}
+
+.checkbox {
+  display: none;
+}
+
+.label {
+  position: relative;
+  background-color: hsl(223, 50%, 87%);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 50px;
+  padding: 5px;
+  margin: 0 10px;
+  width: 50px;
+  height: 26px;
+  cursor: pointer;
+}
+
+.label:active {
+  background-color: hsl(174, 86%, 45%);
+}
+
+.name {
+  font-size: 14px;
+  color: hsl(234, 14%, 74%);
+}
+
+.name span {
+  color: hsl(15, 100%, 70%);
+  background-color: hsl(14, 92%, 95%);
+  font-size: 12px;
+  padding: 2px 6px;
+  border-radius: 30px;
+}
+
+.ball {
+  background: #fff;
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  border-radius: 50%;
+  width: 22px;
+  height: 22px;
+  transition: transform 0.15s linear;
+}
+
+.checkbox:checked + .label .ball {
+  transform: translateX(24px);
+}
+/* End of toggle */
+
+input[type="range"] {
+  -webkit-appearance: none;
+  margin: 18px 0;
+  width: 100%;
+}
+
+input[type="range"]:focus {
+  outline: none;
+}
+
+input[type="range"]::-webkit-slider-runnable-track {
+  width: 100%;
+  height: 8.4px;
+  cursor: pointer;
+  background: hsl(174, 86%, 45%);
+  border-radius: 30px;
+  border: 2px solid hsl(174, 86%, 45%);
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  box-shadow: 1px 1px 1px hsl(174, 86%, 45%), 0px 0px 1px hsl(174, 86%, 45%);
+  border: 1px solid hsl(174, 86%, 45%);
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  background: hsl(174, 86%, 45%);
+  cursor: pointer;
+  -webkit-appearance: none;
+  margin-top: -14px;
+}
+
+input[type="range"]:focus::-webkit-slider-runnable-track {
+  background: hsl(174, 86%, 45%);
+}
+
+input[type="range"]::-moz-range-track {
+  width: 100%;
+  height: 8.4px;
+  cursor: pointer;
+  box-shadow: 1px 1px 1px hsl(174, 86%, 45%), 0px 0px 1px #0d0d0d;
+  background: #3071a9;
+  border-radius: 1.3px;
+  border: 0.2px solid hsl(174, 86%, 45%);
+}
+
+input[type="range"]::-moz-range-thumb {
+  box-shadow: 1px 1px 1px hsl(174, 86%, 45%), 0px 0px 1px #0d0d0d;
+  border: 1px solid hsl(174, 86%, 45%);
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  background: #ffffff;
+  cursor: pointer;
+}
+
+input[type="range"]::-ms-track {
+  width: 100%;
+  height: 8.4px;
+  cursor: pointer;
+  background: transparent;
+  border-color: transparent;
+  border-width: 16px 0;
+  color: transparent;
+}
+
+input[type="range"]::-ms-fill-lower {
+  background: hsl(174, 86%, 45%);
+  border: 0.2px solid hsl(174, 86%, 45%);
+  border-radius: 2.6px;
+  box-shadow: 1px 1px 1px hsl(174, 86%, 45%), 0px 0px 1px hsl(174, 86%, 45%);
+}
+
+input[type="range"]::-ms-fill-upper {
+  background: #3071a9;
+  border: 0.2px solid hsl(174, 86%, 45%);
+  border-radius: 2.6px;
+  box-shadow: 1px 1px 1px hsl(174, 86%, 45%), 0px 0px 1px #0d0d0d;
+}
+
+input[type="range"]::-ms-thumb {
+  box-shadow: 1px 1px 1px hsl(174, 86%, 45%), 0px 0px 1px #0d0d0d;
+  border: 1px solid hsl(174, 86%, 45%);
+  height: 36px;
+  width: 16px;
+  border-radius: 3px;
+  background: #ffffff;
+  cursor: pointer;
+}
+
+input[type="range"]:focus::-ms-fill-lower {
+  background: hsl(174, 86%, 45%);
+}
+
+input[type="range"]:focus::-ms-fill-upper {
+  background: hsl(174, 86%, 45%);
+}
+.attribution { font-size: 12px; text-align: center;font-weight: 600; }
+   
+.attribution a { color:hsl(226, 100%, 87%);;  border: 10px;  background-color:  hsl(227, 35%, 25%); padding: 10px; font-size: 10px; border-radius: 10px; text-decoration: none;}
+.attribution a:hover{ background-color: hsl(174, 86%, 45%);
+    transition: 500ms all ease;}
+ </style>
+
+</head>
+<body>
+  <div class="xtra">
+    <img class="bg-pattern" src="./images/bg-pattern.svg">
+  </div>
+  <header class="cool">
+    <img class="pattern-circles" src="./images/pattern-circles.svg" alt="">
+    <h1> Simple, traffic-based pricing</h1>
+    <p> Sign-up for our 30-day trial.</p>
+    <p> No credit card required.</p>
+  </header>
+
+  <div class="card-container">
+    <div class="last">
+      <h4> 100k Pageviews</h4>
+     </div>
+    <input type="range" name="range" id="range">
+    <div class="soso">
+     <p>$16.00 <span class="like">/month</span> </p>
+    </div>
+   <div class="toggle">
+     <label class="name">Monthly Billing</label>
+     <input type="checkbox" class="checkbox" id="checkbox" />
+ 
+     <label for="checkbox" class="label">
+       <div class="ball"></div>
+     </label>
+ 
+     <label class="name">
+       Yearly Billing
+       <span>-25%</span>
+     </label>
+   </div>
+   <div>
+    <ul>
+      <li> <img src="./images/icon-check.svg" alt="checkbox">
+         Unlimited websites</li>
+      <li> <img src="./images/icon-check.svg" alt="checkbox">
+        100% data ownership</li>
+      <li> <img src="./images/icon-check.svg" alt="checkbox">
+        Email reports
+      </li>
+    </ul>
+    <button class="btn">Start my trial</button>
+  </div>
+  </div>
+ 
+ 
+   
+ 
+
+ 
+ 
+
+ 
+ 
+  
+
+  
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">JOSHUA OTUONYE</a>.
+  </div>
+</body>
+</html>

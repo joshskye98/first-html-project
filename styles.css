@@ -12,7 +12,7 @@ nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 80%;
+    width: 90%;
     margin: 0 auto;
     position: sticky;
     background-color: #fff;
@@ -194,10 +194,14 @@ section h2{
 .mm img{
     width: 100%;
 }
+.tt{
+    line-height: 2rem;
+}
 
  .tt h1{
     color: #2b4b80; 
     font-size: 2.5rem;
+    line-height: 3rem;
  }
 
 .jos{
@@ -215,15 +219,115 @@ section h2{
 }
 h4{
     text-align: center;
-    width: 45%;
+    width: 60%;
     margin: 6rem auto;
     font-size: 3.5rem;
     color: #2b4b80; 
     position: relative;
 }
-.rr{   display: grid;
+.rr{ 
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 90%;
+    margin: 0 auto;
+    gap: 2rem;
+}
+.fa-brands, .fa-solid{
+    color: #ff5c97;
+font-size: 3rem;
+}
+.reg{
+    display: flex;
+   align-items: center;
+   gap: 2rem;
+   border: 1px solid rgb(229, 229, 229);
+   padding: 2rem;
+   border-radius: 5px;
+   transition: 500ms all ease;
+
+}
+.reg h1{
+    color: #4043bc;
+}
+.reg p{
+    color: #2b4b80;
+}
+
+.reg:hover{
+    box-shadow: rgb(241, 241, 241) 4px 4px 4px 4px;
+}
+.colos h1{
+    text-align: center;
+    width: 45%;
+    margin: 6rem auto;
+    font-size: 3.5rem;
+    color: #2b4b80; 
+    position: relative; 
+}
+.init{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 90%;
+    margin: 0 auto;
+    gap: 2rem;
+}
+.goodsin h1{
+    color: #4043bc;
+    font-size: 2rem;
+}
+.goodsin p{
+    color: #2b4b80;
+    padding: 1.5rem;
+    box-sizing: border-box;
+    text-align: center;
+    line-height: 3rem;
+}
+.init{
+    display: grid;
     grid-template-columns: repeat(3, 1fr);
     width: 80%;
     margin: 0 auto;
     gap: 2rem;
+    padding: 2rem;
+    text-align: center;
 }
+.goodsin{
+    align-items: center;
+    gap: 2rem;
+    border: 1px solid rgb(229, 229, 229);
+    padding: 2rem;
+    border-radius: 5px;
+    transition: 500ms all ease;
+}
+.fee p{
+    color: #2b4b80;
+    padding: 1.5rem;
+    box-sizing: border-box;
+    text-align: center;
+    line-height: 3rem;
+}
+.fee h1{
+    color: #4043bc;
+    font-size: 2rem;
+}
+.fee{
+    align-items: center;
+    gap: 2rem;
+    border: 1px solid rgb(229, 229, 229);
+    padding: 2rem;
+    border-radius: 5px;
+    transition: 500ms all ease;
+    box-shadow: rgb(241, 241, 241) 4px 4px 4px 4px;
+}
+.goodsin:hover{
+    transition: 500ms all ease;
+    box-shadow: rgb(241, 241, 241) 4px 4px 4px 4px;
+}
+.sari {
+    font-size: 1.6rem;
+    text-align: center;
+    margin:6rem auto;
+    width: 50%;
+    color: #2b4b80;   
+}
+
